@@ -1,0 +1,51 @@
+:root {
+    --grey-blue: #526475;
+    --light-gray: #6A6F75;
+    --brown: #756446;
+    --dark-brown:#292621;
+}
+html, body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.viewport {
+    height: 100vh;
+}
+
+.welcome-section-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--grey-blue);
+}
+span {
+    font-weight: bold;
+}
+
+.add-info {
+    font-size: 0.8em;
+}
+.card-header {
+    background-color: var(--light-gray);
+    color: #fff;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.img-size {
+    width: 50px;
+    height: 60px;
+    margin-right: 8px;
+}
+
+.perfil-size {
+    border-radius: 100%;
+}
