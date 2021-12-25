@@ -49,4 +49,17 @@ span {
 
 .perfil-size {
     border-radius: 100%;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.6rem;
+    padding: 0 1.6rem;
+}
+@media (max-width: 450px){
+    .perfil-size {
+        width: 260px;
+        height: auto;
+    }
 }
