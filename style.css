@@ -12,6 +12,10 @@ html, body {
     font-family: 'Source Code Pro', monospace;
 }
 
+.text-color {
+    color: #B0B8C2;
+}
+
 .viewport {
     height: 100vh;
     padding-top: 60px;
