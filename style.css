@@ -57,12 +57,17 @@ span {
     height: auto;
 }
 
-h2 {
-    font-size: 1.6rem;
-    padding: 0 1.6rem;
-}
 @media (max-width: 450px){
     .perfil-size {
         width: 260px;
     }
+}
+
+h2 {
+    font-size: 1.6rem;
+    padding: 0 1.6rem;
+}
+
+.link-style {
+    text-decoration: none;
 }
