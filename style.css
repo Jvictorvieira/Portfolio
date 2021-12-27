@@ -13,20 +13,26 @@ html, body {
 }
 
 .text-color {
-    color: #B0B8C2;
+    background: white;
+    color: gray;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 2px 2px black;
 }
+
 
 .viewport {
     height: 100vh;
     padding-top: 60px;
 }
 
-.welcome-section-text {
+.welcome-section {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--grey-blue);
+    background: url(https://media.istockphoto.com/vectors/pixel-video-game-abstract-seamless-background-vector-id1250539480?k=20&m=1250539480&s=612x612&w=0&h=uOB0lCxN2fyG-1RnNt5Ye-6vfgr9yDIsNx4zJzKuQD0=);
+    background-color: black;
+    background-blend-mode: luminosity;
 }
 span {
     font-weight: bold;
@@ -36,7 +42,8 @@ span {
     font-size: 0.8em;
 }
 .card-header {
-    
+    background-image: url(https://media.istockphoto.com/vectors/pixel-video-game-abstract-seamless-background-vector-id1250539480?k=20&m=1250539480&s=612x612&w=0&h=uOB0lCxN2fyG-1RnNt5Ye-6vfgr9yDIsNx4zJzKuQD0=);
+    background-blend-mode:luminosity;
     color: #fff;
 }
 
@@ -55,6 +62,7 @@ span {
     border-radius: 100%;
     width: 100%;
     height: auto;
+    border: 10px solid white;
 }
 
 @media (max-width: 450px){
