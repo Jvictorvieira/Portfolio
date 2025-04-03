@@ -8,15 +8,17 @@ module.exports = {
     theme: {
       extend: {
         colors:{
-          background:"rba(var(--background))",
-          border:"rba(var(--border))",
-          card:"rba(var(--card))",
-          "copy-primary":"rba(var(--copy-primary))",
-          "copy-secondary":"rba(var(--copy-secondary))",
-          cta:"rba(var(--cta))",
-          "cta-active":"rba(var(--cta-active))",
-          "cta-text":"rba(var(--cta-text))",
-          grape:"rba(var(--grape))",
+          background:"rgba(var(--background))",
+          border:"rgba(var(--border))",
+          card:"rgba(var(--card))",
+          "copy-primary":"rgba(var(--copy-primary))",
+          "copy-secondary":"rgba(var(--copy-secondary))",
+          cta:"rgba(var(--cta))",
+          "cta-active":"rgba(var(--cta-active))",
+          "cta-text":"rgba(var(--cta-text))",
+          highlight:"rgba(var(--highlight))",
+          "highlight-aux":"rgba(var(--highlight-aux))",
+          navbar:"rgba(var(--navbar))",
         }
       },
     },
