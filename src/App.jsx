@@ -4,6 +4,9 @@ import { LoadingScreen } from "./components/LoadScreen";
 import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { useEffect, useState } from "react";
+import { Home } from "./components/sections/Home";
+import { About } from "./components/sections/About";
+import { Projects } from "./components/sections/Projects";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -36,9 +39,9 @@ function App() {
       <div className={`min-h-screen transition-opacity duration-700 ${ isLoaded ? "opacity-100": "opacity-0"}`}>
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} handleThemeChange={handleThemeChange} selectedTheme={theme}/>
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} handleThemeChange={handleThemeChange} selectedTheme={theme}/>
-        <div className="flex flex-col items-center justify-center h-screen">
-           
-        </div>
+        <Home/>
+        <About/>
+        <Projects/>
       </div>
       
     </>

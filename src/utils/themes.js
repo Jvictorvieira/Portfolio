@@ -38,12 +38,12 @@ export const themesList = [
       rgb: [255, 255, 255],
     },
     highlight: {
-      hex: "#3B82F6",
-      rgb: [59, 130, 246],
+      hex: "#EAB308",
+      rgb: [234, 179, 8],
     },
     accent: {
-      hex: "#0369A1",
-      rgb: [3, 105, 161],
+      hex: "#C66C49",
+      rgb: [198, 108, 73],
     },
   },
   {
@@ -85,12 +85,12 @@ export const themesList = [
       rgb: [255, 255, 255],
     },
     highlight: {
-      hex: "#A855F7",
-      rgb: [168, 85, 247],
+      hex: "#38BDF8",
+      rgb: [56, 189, 248],
     },
     accent: {
-      hex: "#9333EA",
-      rgb: [147, 51, 234],
+      hex: "#EC4899",
+      rgb: [236, 72, 153],
     },
   },
   {

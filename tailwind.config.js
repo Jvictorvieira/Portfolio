@@ -19,7 +19,20 @@ module.exports = {
           highlight:"rgba(var(--highlight))",
           "highlight-aux":"rgba(var(--highlight-aux))",
           navbar:"rgba(var(--navbar))",
-        }
+          "highlight-low":"rgba(var(--highlight-low))",
+          "highlight-high":"rgba(var(--highlight-high))",
+          "highlight-aux-low":"rgba(var(--highlight-aux-low))",
+          "highlight-aux-high":"rgba(var(--highlight-aux-high))",
+        },
+        keyframes: {
+          gradient: {
+          "0%":{backgroundPosition:"0% 50%"},
+          "100%":{backgroundPosition:"100% 50%"},
+          }
+        },
+        animation: {
+          gradient: 'gradient 6s linear infinite',
+        },
       },
     },
     plugins: [],
