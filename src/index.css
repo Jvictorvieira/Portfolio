@@ -55,12 +55,13 @@ html, body {
   --cta-text: 255, 255, 255;
 
   --highlight: 234, 179, 8;
-  --highlight-low: 234, 179, 8, 0.1;
-  --highlight-high: 234, 179, 8, 0.2;
-
   --highlight-aux: 198, 108, 73;
-  --highlight-aux-low:  198, 108, 73, 0.1;
-  --highlight-aux-high:  198, 108, 73, 0.2;
+  
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+
   
   background: rgba(var(--background));
 }
@@ -81,12 +82,13 @@ html, body {
   --cta-text: 255, 255, 255;
 
   --highlight: 56, 189, 248;
-  --highlight-low: 56, 189, 248, 0.1;
-  --highlight-high: 56, 189, 248, 0.2;
 
   --highlight-aux: 236, 72, 153;
-  --highlight-aux-low:  236, 72, 153, 0.1;
-  --highlight-aux-high:  236, 72, 153, 0.2;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
 
   background: rgba(var(--background));
 }
@@ -107,12 +109,14 @@ html, body {
   --cta-text: 255, 255, 255;
 
   --highlight: 132, 204, 22;
-  --highlight-low: 132, 204, 22, 0.1;
-  --highlight-high: 132, 204, 22, 0.2;
-  
   --highlight-aux: 253, 224, 71;
-  --highlight-aux-low:  253, 224, 71, 0.1;
-  --highlight-aux-high:  253, 224, 71, 0.2;
+
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+
 
   background: rgba(var(--background));
 }
@@ -132,13 +136,13 @@ html, body {
   --cta-active: 0, 230, 140;
   --cta-text: 0, 0, 0;
 
-  --highlight:  255, 255, 0;
-  --highlight-low: 255, 255, 0, 0.1;
-  --highlight-high: 255, 255, 0, 0.2;
-
+  --highlight:  255, 0, 255;
   --highlight-aux: 255, 255, 0;
-  --highlight-aux-low:  255, 255, 0, 0.1;
-  --highlight-aux-high:  255, 255, 0, 0.2;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
 
   background: rgba(var(--background));
 }
@@ -159,12 +163,12 @@ html, body {
   --cta-text: 0, 0, 0;
 
   --highlight: 189, 147, 249;
-  --highlight-low: 189, 147, 249, 0.1;
-  --highlight-high: 189, 147, 249, 0.2;
-
   --highlight-aux: 255, 184, 108;
-  --highlight-aux-low: 255, 184, 108, 0.1;
-  --highlight-aux-high: 255, 184, 108, 0.2;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
 
   background: rgba(var(--background));
 }
@@ -185,12 +189,13 @@ html, body {
   --cta-text: 0, 0, 0;
 
   --highlight:  255, 242, 72;
-  --highlight-low: 255, 242, 72, 0.1;
-  --highlight-high: 255, 242, 72, 0.2;
-  
   --highlight-aux: 0, 255, 255;
-  --highlight-aux-low:  0, 255, 255, 0.1;
-  --highlight-aux-high:  0, 255, 255, 0.2;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+  
   background: rgba(var(--background));
 }
 
@@ -210,12 +215,13 @@ html, body {
   --cta-text: 0, 0, 0;
 
   --highlight: 168, 85, 247;            /* Toxic slime green for standout effects */
-  --highlight-low: 168, 85, 247, 0.1;
-  --highlight-high: 168, 85, 247, 0.2;
-
   --highlight-aux: 0, 255, 70;
-  --highlight-aux-low: 0, 255, 70, 0.1;
-  --highlight-aux-high: 0, 255, 70, 0.2;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+  
   /* Blood red for accents */
              /* Slightly lifted navbar for depth */
   background: rgba(var(--background));
@@ -235,4 +241,15 @@ html, body {
   );
   background-size: 300% 300%;
   background-clip: text;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

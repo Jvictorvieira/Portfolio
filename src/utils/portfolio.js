@@ -65,7 +65,7 @@ export const portfolioInfo = {
         },
         {
             title: "Project 2",
-            description: "Description of project 2",
+            description: "Description of project 2 ash ashah sasasajlnbskb a aksbkahbs kabs k ajbskabskabsk b",
             link: "https://example.com/project2",
             image: "/path/to/image2.jpg",
             stacks: ["React", "Node.js", "Tailwind CSS"],
