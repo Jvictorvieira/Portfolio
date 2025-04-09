@@ -1,7 +1,7 @@
 import { Section } from "../Section";
 import emailjs from "emailjs-com";
 import { useState } from "react";
-export const Contact = () => {
+export const Contact = ({handleToast}) => {
   const [form, setForm] = useState({
     from_name: "",
     email: "",
@@ -14,6 +14,7 @@ export const Contact = () => {
     emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_API_KEY).then(
       (result) => {
         console.log(result.text);
+        handleToast(true);
         setForm({
           from_name: "",
           email: "",
@@ -21,6 +22,7 @@ export const Contact = () => {
         });
       },
       (error) => {
+        handleToast(false);
         console.log(error.text);
       }
     );
