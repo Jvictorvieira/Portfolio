@@ -9,7 +9,7 @@ export const Home = () => {
       <div className="flex justify-center gap-4">
         <a
           href="#projects"
-          className="bg-cta hover:bg-cta-active text-copy-primary py-3 
+          className="bg-cta hover:bg-cta-active text-copy-secondary py-3 
                     px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 "
         >
           View projects

@@ -25,7 +25,7 @@ export const ThemeButton = ({ theme, selectedTheme, handleThemeSelection, handle
         </div>
       )}
       
-      <div className="flex space-x-1 mr-3 lg:flex hidden">
+      <div className="flex space-x-1 mr-3 md:flex hidden">
         <span
           className="w-2 h-6 rounded-full"
           style={{ backgroundColor: theme.border.hex }}

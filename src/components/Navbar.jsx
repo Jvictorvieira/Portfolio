@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { themesList } from "../utils/themes";
 import { ThemeButton } from "./ThemeButton";
+import { portfolioInfo } from "../utils/portfolio";
 export const Navbar = ({
   menuOpen,
   setMenuOpen,
@@ -10,7 +11,7 @@ export const Navbar = ({
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const dropdownRef = useRef(null);
-
+  const hasProjects = portfolioInfo.projects.length > 0;
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
@@ -63,12 +64,12 @@ export const Navbar = ({
             >
               About
             </a>
-            <a
+            { hasProjects && <a
               href="#projects"
               className="text-copy-primary hover:text-cta transition-colors"
             >
               Projects
-            </a>
+            </a>}
             <a
               href="#contact"
               className="text-copy-primary hover:text-cta transition-colors"

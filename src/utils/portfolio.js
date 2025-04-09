@@ -12,13 +12,13 @@ export const portfolioInfo = {
         hands-on experience with web development, UX/UI design, and project
         management.`,
     frontendSkills: [
-        "React",
-        "Angular",
-        "HTML5",
-        "CSS",
         "JavaScript",
         "TypeScript",
+        "HTML5",
+        "CSS",
         "Tailwind CSS",
+        "React",
+        "Angular",
     ],
     backendSkills: [
         "Node.js",
@@ -27,6 +27,12 @@ export const portfolioInfo = {
         "Python",
         "MySQL",
         "PostgreSQL",
+    ],
+    devopsSkills: [
+        "Docker",
+        "AWS",
+        "Git",
+        "GitHub",
     ],
     education: [
         {
@@ -56,20 +62,20 @@ export const portfolioInfo = {
         },
     ],
     projects: [
-        {
-            title: "Project 1",
-            description: "Description of project 1",
-            link: "https://example.com/project1",
-            image: "/path/to/image1.jpg",
-            stacks: ["React", "Node.js", "Tailwind CSS"],
-        },
-        {
-            title: "Project 2",
-            description: "Description of project 2 ash ashah sasasajlnbskb a aksbkahbs kabs k ajbskabskabsk b",
-            link: "https://example.com/project2",
-            image: "/path/to/image2.jpg",
-            stacks: ["React", "Node.js", "Tailwind CSS"],
-        },
+        // {
+        //     title: "Project 1",
+        //     description: "Description of project 1",
+        //     link: "https://example.com/project1",
+        //     image: "/path/to/image1.jpg",
+        //     stacks: ["React", "Node.js", "Tailwind CSS"],
+        // },
+        // {
+        //     title: "Project 2",
+        //     description: "Description of project 2 ash ashah sasasajlnbskb a aksbkahbs kabs k ajbskabskabsk b",
+        //     link: "https://example.com/project2",
+        //     image: "/path/to/image2.jpg",
+        //     stacks: ["React", "Node.js", "Tailwind CSS"],
+        // },
     ],
     
 }

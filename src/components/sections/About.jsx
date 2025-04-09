@@ -9,18 +9,32 @@ export const About = () => {
             <p className="text-copy-primary mb-6">{portfolioInfo.about}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="rounded-xl p-6 ">
-                    <h3 className="text-xl font-bold mb-4">Frontend</h3>
+                    <h3 className="text-xl text-copy-primary font-bold mb-4">Frontend</h3>
                     <div className="flex flex-wrap gap-2">
                         {portfolioInfo.frontendSkills.map((skill, index) => (
-                            <Chip text={skill}/>
+                            <div key={index}>
+                                <Chip text={skill}/>
+                            </div>
                         ))}
                     </div>
                 </div>
                 <div className="rounded-xl p-6 ">
-                    <h3 className="text-xl font-bold mb-4">Backend</h3>
-                    <div className="flex flex-wrap gap-2">
+                    <h3 className="text-xl text-copy-primary font-bold mb-4">Backend</h3>
+                    <div className="flex flex-wrap gap-2 items-center justify-center">
                         {portfolioInfo.backendSkills.map((skill, index) => (
-                            <Chip text={skill}/>
+                            <div key={index}>
+                                <Chip text={skill}/>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="rounded-xl p-6 ">
+                    <h3 className="text-xl text-copy-primary font-bold mb-4">DevOps & Infrastructure</h3>
+                    <div className="flex flex-wrap gap-2">
+                        {portfolioInfo.devopsSkills.map((skill, index) => (
+                            <div key={index}>
+                                <Chip text={skill}/>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -28,7 +42,7 @@ export const About = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-border border hover:hover:-translate-y-1 transition-all">
-                <h3 className="text-xl front-bold mb-4">🎓 Education</h3>
+                <h3 className="text-xl front-bold mb-4 text-copy-primary">🎓 Education</h3>
                 <ul className="list-disc list-inside text-copy-primary space-y-2">
                     {portfolioInfo.education.map((edu, index) => (
                         <li key={index} className="mb-2">
@@ -38,7 +52,7 @@ export const About = () => {
                 </ul>
             </div>
             <div className="p-6 rounded-xl border-border border hover:hover:-translate-y-1 transition-all">
-                <h3 className="text-xl front-bold mb-4">💼 Work Experience</h3>
+                <h3 className="text-xl front-bold mb-4 text-copy-primary" >💼 Work Experience</h3>
                 <div className="space-y-4 text-copy-primary">
                     {portfolioInfo.work.map((job, index) => (
                         <div key={index} className="mb-2">

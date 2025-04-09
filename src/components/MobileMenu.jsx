@@ -1,11 +1,13 @@
 import { themesList } from "../utils/themes";
 import { ThemeButton } from "./ThemeButton";
+import { portfolioInfo } from "../utils/portfolio";
 export const MobileMenu = ({
   menuOpen,
   setMenuOpen,
   handleThemeChange,
   selectedTheme,
 }) => {
+  const hasProjects = portfolioInfo.projects.length > 0;
   return (
     <div
       className={`fixed top-0 w-full bg-navbar z-40 flex flex-col items-center justify-center
@@ -49,7 +51,7 @@ export const MobileMenu = ({
       >
         About
       </a>
-      <a
+      { hasProjects && <a
         href="#projects"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-copy-primary my-4 transform transition-transform duration-300
@@ -61,7 +63,7 @@ export const MobileMenu = ({
             `}
       >
         Projects
-      </a>
+      </a> }
       <a
         href="#contact"
         onClick={() => setMenuOpen(false)}
