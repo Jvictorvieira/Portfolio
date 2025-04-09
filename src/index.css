@@ -1,0 +1,255 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', sans-serif;
+  background: #0a0a0a;
+  color: #f3f4f5
+}
+
+@layer utilities {
+ @keyframes loading {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(250%);
+  }
+ }
+}
+.animate-loading-bar {
+  animation: loading 0.8s ease infinite;
+}
+
+@layer blink {
+  @keyframes loading {
+   0%, 100% {
+    opacity: 1;
+   }
+   50% {
+     opacity: 0;
+  }
+ }
+}
+
+.animate-blink {
+  animation: blink 0.8s step-end infinite;
+}
+
+.light {
+  --background: 250, 250, 250;
+
+  --navbar: 255, 255, 255;
+
+  --border: 220, 220, 220;
+  --card: 255, 255, 255;
+
+  --copy-primary: 20, 20, 20;
+  --copy-secondary: 245, 245, 245;
+
+  --cta: 99, 102, 241;
+  --cta-active: 79, 70, 229;
+  --cta-text: 255, 255, 255;
+
+  --highlight: 234, 179, 8;
+  --highlight-aux: 198, 108, 73;
+  
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+
+  
+  background: rgba(var(--background));
+}
+
+.dark {
+  --background: 18, 18, 18;
+
+  --navbar: 24, 24, 27; 
+
+  --border: 38, 38, 38;
+  --card: 24, 24, 27;
+
+  --copy-primary: 245, 245, 245;
+  --copy-secondary: 245, 245, 245;
+
+  --cta: 139, 92, 246;
+  --cta-active: 124, 58, 237;
+  --cta-text: 255, 255, 255;
+
+  --highlight: 56, 189, 248;
+
+  --highlight-aux: 236, 72, 153;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+
+  background: rgba(var(--background));
+}
+
+.forest {
+  --background: 22, 33, 27;
+
+  --navbar: 30, 41, 35;
+
+  --border: 53, 72, 60;
+  --card: 41, 58, 50;
+
+  --copy-primary: 236, 253, 245;
+  --copy-secondary: 236, 253, 245;
+
+  --cta: 34, 197, 94;
+  --cta-active: 22, 163, 74;
+  --cta-text: 255, 255, 255;
+
+  --highlight: 132, 204, 22;
+  --highlight-aux: 253, 224, 71;
+
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+
+
+  background: rgba(var(--background));
+}
+
+.neon {
+  --background: 10, 10, 25;
+
+  --navbar: 20, 20, 50;
+
+  --border: 50, 50, 80;
+  --card: 20, 20, 40;
+
+  --copy-primary: 255, 255, 255;
+  --copy-secondary: 255, 255, 255;
+
+  --cta: 0, 255, 157;
+  --cta-active: 0, 230, 140;
+  --cta-text: 0, 0, 0;
+
+  --highlight:  255, 0, 255;
+  --highlight-aux: 255, 255, 0;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+
+  background: rgba(var(--background));
+}
+
+.dracula {
+  --background: 40, 42, 54;
+
+  --navbar: 48, 50, 66;
+
+  --border: 68, 71, 90;
+  --card: 48, 50, 66;
+
+  --copy-primary: 248, 248, 242;
+  --copy-secondary: 248, 248, 242;
+
+  --cta: 255, 121, 198;
+  --cta-active: 255, 85, 170;
+  --cta-text: 0, 0, 0;
+
+  --highlight: 189, 147, 249;
+  --highlight-aux: 255, 184, 108;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+
+  background: rgba(var(--background));
+}
+
+.cyberpunk {
+  --background: 12, 6, 28;
+
+  --navbar: 32, 10, 58;
+
+  --border: 51, 17, 84;
+  --card: 28, 12, 48;
+
+  --copy-primary: 255, 255, 255;
+  --copy-secondary: 255, 255, 255;
+
+  --cta: 255, 0, 112;
+  --cta-active: 255, 0, 192;
+  --cta-text: 0, 0, 0;
+
+  --highlight:  255, 242, 72;
+  --highlight-aux: 0, 255, 255;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+  
+  background: rgba(var(--background));
+}
+
+.halloween {
+  --background: 12, 12, 12;         /* Deep, spooky background */
+
+  --navbar: 18, 18, 18; 
+  
+  --border: 45, 45, 45;
+  --card: 22, 22, 22;
+
+  --copy-primary: 255, 255, 255;
+  --copy-secondary: 255, 255, 255;
+
+  --cta: 255, 115, 0;              /* Bright pumpkin orange */
+  --cta-active: 220, 100, 0;
+  --cta-text: 0, 0, 0;
+
+  --highlight: 168, 85, 247;            /* Toxic slime green for standout effects */
+  --highlight-aux: 0, 255, 70;
+
+  --shadow-low: 0 0 4px 4px rgba(var(--highlight), 0.1);
+  --shadow-high: 0 0 8px 8px rgba(var(--highlight), 0.2);
+  --shadow-aux-low: 0 0 4px 4px rgba(var(--highlight-aux), 0.1);
+  --shadow-aux-high: 0 0 8px 8px rgba(var(--highlight-aux), 0.2);
+  
+  /* Blood red for accents */
+             /* Slightly lifted navbar for depth */
+  background: rgba(var(--background));
+}
+
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    rgba(var(--highlight)),
+    rgba(var(--highlight-aux)),
+    rgba(var(--cta)),
+    rgba(var(--highlight-aux)),
+    rgba(var(--highlight)),
+    rgba(var(--highlight-aux)),
+    rgba(var(--cta))
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
