@@ -253,3 +253,13 @@ html, body {
   opacity: 1;
   transform: translateY(0);
 }
+.toast {
+  opacity: 0;
+  transform: translateX(100%); /* Slide out */
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.toast.show-toast {
+  opacity: 1;
+  transform: translateX(0); /* Slide in */
+}
